@@ -1,0 +1,151 @@
+<!DOCTYPE html5>
+<html>
+
+<head>
+  <title>quietflow.js Demo</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Paul Krishnamurthy">
+  <meta name="description" content="A jQuery library for creating beautiful dynamic or static visual effects." />
+  <link rel="stylesheet" type="text/css" href="demo/style/index.css">
+  <link rel="stylesheet" type="text/css" href="demo/style/prism.css">
+  <script src="jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="lib/quietflow.min.js"></script>
+  <script type="text/javascript" src="demo/js/index.js"></script>
+  <script type="text/javascript" src="demo/js/prism.js"></script>
+</head>
+
+<body>
+
+  <div id="Wrapper">
+    <div id="Box">
+      <h1><span>quietflow</span>.js</h1>
+      <h2>A jQuery library for creating beautiful dynamic or static visual effects.</h2>
+
+      <div class="code-preview center">
+        <div id="squareFlash">
+          <pre><code class="language-javascript">
+$("body").quietflow({
+  theme : "squareFlash",
+  squareSize : 20,
+  maxRed : 255,
+  maxGreen : 40,
+  maxBlue : 100,
+  speed : 80
+})</code></pre>
+        </div>
+      </div>
+
+      <div class="code-preview center">
+        <div id="vortex">
+          <pre><code class="language-javascript">
+$("body").quietflow({
+  theme : "vortex",
+  miniRadii : 40
+})</code></pre>
+        </div>
+      </div>
+
+      <div class="code-preview center">
+        <div id="bouncingBalls">
+          <pre><code class="language-javascript">
+$("body").quietflow({
+  theme : "bouncingBalls",
+  specificColors : [
+    "rgba(255, 10, 50, .5)",
+    "rgba(10, 255, 50, .5)", 
+    "rgba(10, 50, 255, .5)", 
+    "rgba(0, 0, 0, .5)"
+  ]
+})</code></pre>
+        </div>
+      </div>
+
+      <div class="code-preview center">
+        <div id="shootingLines">
+          <pre><code class="language-javascript">
+$("body").quietflow({
+  theme         : "shootingLines",
+  backgroundCol : "#141C26",
+  lineColor     : "#05E0E0",
+  lineGlow      : "#00ff00"
+})</code></pre>
+        </div>
+      </div>
+
+      <div class="code-preview center">
+        <div id="simpleGradient">
+          <pre><code class="language-javascript">
+$("body").quietflow({
+  theme : "simpleGradient",
+  primary : "#B066FE",
+  accent : "#63E2FF"
+})</code></pre>
+        </div>
+      </div>
+
+      <div class="code-preview center">
+        <div id="starfield">
+          <pre><code class="language-javascript">
+$("body").quietflow({
+  theme : "starfield"
+})</code></pre>
+        </div>
+      </div>
+
+      <div class="code-preview center">
+        <div id="layeredTriangles">
+          <pre><code class="language-javascript">
+$("body").quietflow({
+  theme : "layeredTriangles"
+})</code></pre>
+        </div>
+      </div>
+
+      <div class="code-preview center">
+        <div id="cornerSpikes">
+          <pre><code class="language-javascript">
+$("body").quietflow({
+  theme : "cornerSpikes",
+  backgroundCol : "#34495E",
+  specificColors : [
+    "#009245", 
+    "#FCEE21"
+  ]
+})</code></pre>
+        </div>
+      </div>
+
+      <div class="code-preview center">
+        <div id="floatingBoxes">
+          <pre><code class="language-javascript">
+$("body").quietflow({
+  theme : "floatingBoxes",
+  specificColors : [
+    "rgba(46, 204, 113, .5)", 
+    "rgba(52, 152, 219, .5)", 
+    "rgba(231, 76, 60, .5)", 
+    "rgba(155, 89, 182, .5)", 
+    "rgba(241, 196, 15, .5)"
+  ],
+  boxCount : 500,
+  backgroundCol : "#34495E"
+})</code></pre>
+        </div>
+
+        <select class="effects center">
+          <option value="bouncingBalls">bouncingBalls</option>
+          <option value="starfield">starfield</option>
+          <option value="squareFlash">squareFlash</option>
+          <option value="vortex">vortex</option>
+          <option value="shootingLines">shootingLines</option>
+          <option value="simpleGradient">simpleGradient</option>
+          <option value="layeredTriangles">layeredTriangles</option>
+          <option value="cornerSpikes">cornerSpikes</option>
+          <option value="floatingBoxes">floatingBoxes</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

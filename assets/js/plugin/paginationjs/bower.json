@@ -1,0 +1,29 @@
+{
+    "name": "paginationjs",
+    "version": "2.1.5",
+    "main": "dist/pagination.min.js",
+    "keywords": [
+        "paginationjs",
+        "pagination.js",
+        "pagination",
+        "jquery.pagination",
+        "jquery pagination"
+    ],
+    "ignore": [
+        "**/.*",
+        "src",
+        "docs",
+        "examples",
+        "node_modules",
+        "LICENSE",
+        "component.json",
+        "bower.json",
+        "package.json",
+        "README*.md",
+        "example.js",
+        "Gruntfile.js"
+    ],
+    "dependencies": {
+        "jquery": "git://github.com/components/jquery.git#~1.8.3"
+    }
+}

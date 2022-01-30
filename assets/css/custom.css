@@ -1,0 +1,37 @@
+#loading-container {
+	position: absolute;
+	display: flex;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	z-index: 9999;
+}
+#loading-screen {
+	position: absolute;
+	left: 48%;
+	top: 48%;
+	z-index: 9999;
+	text-align: center;
+}
+
+@media screen {
+	@page {
+		size: "A4"; /* DIN A4 standard, Europe */
+		margin: 10mm;
+	}
+}
+
+@media print {
+	@page {
+		size: "A4"; /* DIN A4 standard, Europe */
+		margin: 10mm;
+	}
+	html,
+	body {
+		margin: 0px;
+		height: auto;
+		overflow: visible;
+		-webkit-print-color-adjust: exact;
+		background-color: white !important;
+	}
+}
